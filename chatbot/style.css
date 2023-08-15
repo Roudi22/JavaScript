@@ -102,3 +102,7 @@ body {
     line-height: 55px;
     visibility: hidden;
 }
+
+.chat-input textarea:valid ~ span {
+    visibility: visible;
+}

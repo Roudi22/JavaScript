@@ -72,3 +72,33 @@ body {
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 0;
 }
+
+.chatbot .chat-input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    gap: 5px;
+}
+
+.chat-input textarea {
+    height: 55px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    resize: none;
+    padding: 16px 15px 16px 0;
+}
+
+.chat-input span {
+    align-self: flex-end;
+    color: #724ae8;
+    font-size: 1.35rem;
+    cursor: pointer;
+    height: 55px;
+    line-height: 55px;
+    visibility: hidden;
+}

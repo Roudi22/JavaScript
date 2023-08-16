@@ -16,6 +16,7 @@ body {
   width: 420px;
   transform: scale(0.5);
   opacity: 0;
+  pointer-events: none;
   overflow: hidden;
   background-color: #fff;
   border-radius: 15px;

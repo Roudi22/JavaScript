@@ -24,6 +24,12 @@ body {
     0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
+.show-chatbot .chatbot {
+    transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .chatbot header {
     background-color: #724ae8;
     padding: 16px 0;

@@ -137,6 +137,10 @@ body {
     position: absolute;
 }
 
-.chatbot-toggler span:last-child {
+.chatbot-toggler span:last-child, .show-chatbot .chatbot-toggler span:first-child {
     opacity: 0;
+}
+
+.show-chatbot .chatbot-toggler span:last-child {
+    opacity: 1;
 }

@@ -16,7 +16,7 @@ const handleChat = () => {
     userMessage = chatInput.value.trim(); // Getting entered message and removing extra whitespace
     if(!userMessage) return // Return if the message is empty
 
-    chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+    chatbox.appendChild(createChatLi(userMessage, "outgoing")); // append the user message to the chat box
     chatInput.value = ""
 }
 

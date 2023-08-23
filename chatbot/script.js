@@ -7,9 +7,9 @@ let userMessage;
 const createChatLi = (message, className) => {
     const chatLi = document.createElement("li"); // create li element and save it in a variable
     chatLi.classList.add("chat", className); // adding the nesseccery classes to the creted element
-    let chatContent = className === "outgoing" ? `<p>${message}</p>` : `<span class="material-symbols-outlined">smart_toy</span>` // setting the chat content depending on the class if it's outgoing or sopmething else
+    let chatContent = className === "outgoing" ? `<p>${message}</p>` : `<span class="material-symbols-outlined">smart_toy</span><p>${message}</p>` // setting the chat content depending on the class if it's outgoing or sopmething else
     chatLi.innerHTML = chatContent;
-    return chatLi
+    return chatLi;
 }
 
 const handleChat = () => {
@@ -17,13 +17,16 @@ const handleChat = () => {
     if(!userMessage) return // Return if the message is empty
 
     chatbox.appendChild(createChatLi(userMessage, "outgoing")); // append the user message to the chat box
-    chatInput.value = ""
-
+    
     setTimeout(() => {
         // display "Thinking..." after a few seconds 
-        chatbox.appendChild(createChatLi("Thinking...", "incoming")); // append the user message to the chat box
+        chatbox.appendChild(createChatLi("Thinking...", "incoming"));
 
-    }, 600)
+    }, 600);
+
+    chatInput.value = "";
+
+    
 }
 
 sendChatBtn.addEventListener("click", handleChat);

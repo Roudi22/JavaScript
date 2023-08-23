@@ -41,3 +41,16 @@ body {
     border-radius: 5px;
     font-size: 1.3rem;
 }
+
+.pass-field i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.pass-field i:hover {
+    color: rgb(79, 105, 234);
+}

@@ -54,3 +54,29 @@ body {
 .pass-field i:hover {
     color: rgb(79, 105, 234);
 }
+
+.wrapper .content {
+    margin: 20px 0 20px;
+}
+
+.content p {
+    font-size: 1.3rem;
+}
+
+.content .requirement-list {
+    margin-top: 18px;
+}
+
+.requirement-list li {
+    list-style: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.requirement-list li i {
+    margin-right: 10px;
+    font-size: 0.6rem;
+    width: 10px;
+}

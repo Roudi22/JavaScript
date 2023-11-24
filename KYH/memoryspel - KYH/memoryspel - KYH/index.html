@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Memory Card Game | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- Huvudmenyn -->
+    <div class="meny-btn">
+      <div class="meny-text">Memory Spel</div>
+      <button id="med-spelare">spela mot andra</button>
+      <button id="med-dator">Spela mot dator</button>
+    </div>
+
+    <section class="container-sprelare">
+      <h2>Spela mot andra</h2>
+      <hr />
+      <article>
+        <h4>Spelare 1</h4>
+        <input
+          type="text"
+          name="Spelare1"
+          placeholder="Skriva namn på spelare 1"
+        />
+      </article>
+      <article>
+        <h4>Spelare 2</h4>
+        <input
+          type="text"
+          name="Spelare2"
+          placeholder="Skriva namn på spelare 2"
+        />
+      </article>
+      <button id="start1">Starta Spelet</button>
+    </section>
+
+    <section class="container-dator">
+      <h2>Spela mot dator</h2>
+      <hr />
+      <article class="namn">
+        <h4>Spelare 1</h4>
+        <input
+          type="text"
+          name="Spelare1"
+          placeholder="Skriva namn på spelaren"
+        />
+      </article>
+      <article>
+        <h4>Välj nivå på datorn</h4>
+        <div class="välj-btn">
+          <button>Lätt</button>
+          <button>Svår</button>
+        </div>
+      </article>
+      <button id="start2">Starta Spelet</button>
+    </section>
+    
+    <!-- end Huvudmenyn -->
+    <section class="cards-container">
+    <div class="wrapper">
+      <div class="history-points">
+        <div class="history-points-wrapper">
+          <div class="header">
+            <h3>Poäng</h3>
+            <div class="players-points">
+              <p>Gertrud: <span>0</span></p>
+              <p>Henrik: <span>0</span></p>
+            </div>
+          </div>
+  
+          <div class="history">
+            <h3>Historik</h3>
+            <hr>
+            <ul class="history-list">
+              <li>Gertrud hittade Javascript</li>
+            </ul>
+          </div>
+          <div class="game-buttons">
+            <button>Återställ poängen</button>
+            <button>Avsluta matchen</button>
+          </div>
+        </div>
+      </div>
+      <div>
+
+        <div class="title">
+          <h1>Memory Game</h1>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-1.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-2.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-6.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-3.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-5.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-4.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-11.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          <li class="card">
+            <div class="view front-view">
+              <img src="images/que_icon.svg" alt="icon">
+            </div>
+            <div class="view back-view">
+              <img src="images/img-12.png" alt="card-img">
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

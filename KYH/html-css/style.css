@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid #c70d0d;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  
+  gap: 1rem;
+}
+
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: #c70d0d;
+}
+.box-2 {
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  background-color:aqua;
+}
+.box-3 {
+  align-self: self-end;
+  width: 200px;
+  height: 200px;
+  background-color:rgb(108, 211, 177);
+}

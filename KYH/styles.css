@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: fit-content;
+    margin: 40px auto;
+    position: relative;
+}
+
+.links {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    white-space: nowrap;
+    list-style: none;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+}
+.links li:nth-child(1) {
+    position: absolute;
+    bottom: 70px;
+}
+.links li:last-child{
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+}

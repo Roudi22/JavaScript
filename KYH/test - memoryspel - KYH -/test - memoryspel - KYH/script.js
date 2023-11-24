@@ -15,6 +15,7 @@ let player1;
 let player2;
 let player1Score = 0;
 let player2Score = 0;
+let winner;
 let mode;
 
 twoPlayersBtn.addEventListener("click", () => {
@@ -24,14 +25,16 @@ twoPlayersBtn.addEventListener("click", () => {
 
   });
   
-  againstComBtn.addEventListener("click", () => {
+againstComBtn.addEventListener("click", () => {
     mode = "computer"
     modePopup.classList.toggle("hide");
     againstComPopup.classList.toggle("hide");
-  });
+});
   
-  twoPlayersStartBtn.addEventListener("click", () => {
+twoPlayersStartBtn.addEventListener("click", () => {
     currentPlayer = player1Input.value;
+    
+    turnTitle.textContent = `${currentPlayer}s tur`
     player1 =  player1Input.value;
     player2 =  player2Input.value;
 
@@ -47,9 +50,9 @@ twoPlayersBtn.addEventListener("click", () => {
     } else {
       alert("Invalid input! Player name must not be empty and should contain at least 4 characters.");
     }
-  });
+});
   
-  againstComStartBtn.addEventListener("click", () => {
+againstComStartBtn.addEventListener("click", () => {
     const player1Input = document.getElementById("player1");
     const player1Name = player1Input.value.trim();
   
@@ -59,7 +62,7 @@ twoPlayersBtn.addEventListener("click", () => {
     } else {
       alert("Invalid input! Player name must not be empty and should contain at least 4 characters.");
     }
-  });
+});
 
 const cards = document.querySelectorAll(".card");
 let matched = 0;
@@ -95,8 +98,10 @@ function matchCards(img1, img2) {
           updateScoreDisplay();
 
 
-        if(matched == 12) {
+        if(matched === 12) {
             setTimeout(() => {
+                winner = player1Score > player1Score ? player1 : player2;
+                console.log(winner)
                 return shuffleCard();
             }, 1000);
         }
@@ -140,6 +145,8 @@ function updateScoreDisplay() {
   }
 
 function shuffleCard() {
+    player1Score = 0;
+    player2Score = 0;
     matched = 0;
     disableDeck = false;
     cardOne = cardTwo = "";
